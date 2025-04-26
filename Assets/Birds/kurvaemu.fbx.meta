@@ -3,7 +3,12 @@ guid: 4397d18052f4b0a46a5b8f01e20d4f08
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: emucolor
+    second: {fileID: 2100000, guid: 0452aeba5b5f73e41ab60d766fd5f853, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
