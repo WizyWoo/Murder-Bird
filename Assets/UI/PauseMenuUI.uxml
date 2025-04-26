@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="IntroUI.uss" />
+
+    <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; flex-direction: column;">
+        
+        <ui:Label 
+            text="Paused" 
+            name="pauseLabel"
+            style="font-size: 30px; -unity-font-style: bold; color: rgb(140, 0, 0); margin-bottom: 40px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);" 
+        />
+
+        <ui:Button 
+            text="Resume" 
+            name="resumeButton" 
+            class="horror-button" 
+        />
+
+        <ui:Button 
+            text="Exit" 
+            name="exitButton" 
+            class="horror-button" 
+        />
+
+    </ui:VisualElement>
+</ui:UXML>
