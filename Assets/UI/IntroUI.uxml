@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <!-- Link to USS file -->
+    <ui:Style src="IntroUI.uss"/>
+
+    <ui:VisualElement style="flex-grow: 1; justify-content: center; align-items: center; flex-direction: column;">
+
+        <!-- Label with spooky styling -->
+        <ui:Label 
+            tabindex="-1" 
+            text="Murder Bird" 
+            parse-escape-sequences="true" 
+            display-tooltip-when-elided="true" 
+            name="murderBirdLabel" 
+            style="font-size: 30px; -unity-font-style: bold; color: rgb(140, 0, 0); margin-bottom: 40px; text-shadow: 2px 2px 5px rgba(0,0,0,0.7);" 
+        />
+
+        <!-- START Button (Horror style) -->
+        <ui:Button 
+            text="START" 
+            parse-escape-sequences="true" 
+            display-tooltip-when-elided="true" 
+            name="startButton" 
+            class="horror-button"
+        />
+
+        <!-- EXIT Button (Horror style) -->
+        <ui:Button 
+            text="EXIT" 
+            parse-escape-sequences="true" 
+            display-tooltip-when-elided="true" 
+            name="exitButton" 
+            class="horror-button"
+        />
+    </ui:VisualElement>
+</ui:UXML>
