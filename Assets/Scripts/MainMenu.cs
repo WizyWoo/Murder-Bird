@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
     private void StartGame()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Gui's Playground");
     }
 
     private void ExitGame()
