@@ -6,6 +6,8 @@ public class MurderableThing : MonoBehaviour, IDamageable
 {
 
     public float health;
+    public GameObject ToActivateOnDeath;
+    public bool MoveToDeathLoc;
     public GameObject ToSpawnOnDeath;
     public bool SpawnOnDeathPos;
     public Vector3 WorldSpawnPos;
@@ -29,6 +31,15 @@ public class MurderableThing : MonoBehaviour, IDamageable
     {
 
         Instantiate(DeathEffectPrefab, transform.position, Quaternion.identity);
+
+        if(ToActivateOnDeath != null)
+        {
+
+            ToActivateOnDeath.SetActive(true);
+            if(MoveToDeathLoc)
+                ToActivateOnDeath.transform.position = transform.position + Vector3.up;
+
+        }
 
         if(ToSpawnOnDeath != null)
             Instantiate(ToSpawnOnDeath, SpawnOnDeathPos ? transform.position + Vector3.up : WorldSpawnPos, Quaternion.identity);

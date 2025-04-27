@@ -42,12 +42,16 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _AlphaClip: 0
+    - _AlphaToMask: 0
+    - _Cutoff: 0
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _Glossiness: 0.23
     - _Mode: 0
     - _Smoothness: 0.23
     - _SrcBlend: 1
+    - _SrcBlendAlpha: 1
     - _Surface: 0
     - _ZWrite: 1
     m_Colors:
