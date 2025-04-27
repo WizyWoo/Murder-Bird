@@ -37,6 +37,9 @@ public class Stick : MonoBehaviour, IGrabbable
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        if(_rb.velocity.magnitude < 1f && _grabbedBy == null)
+            return;
         
         if(collision.gameObject.TryGetComponent<IDamageable>(out IDamageable damageable))
         {
@@ -44,6 +47,13 @@ public class Stick : MonoBehaviour, IGrabbable
             damageable.TakeDamage(Damage);
             Instantiate(HitEffectPrefab, collision.contacts[0].point, Quaternion.identity).transform.LookAt(collision.contacts[0].point + collision.contacts[0].normal);
     
+        }
+        else if(collision.transform.root.TryGetComponent<IDamageable>(out IDamageable damageable2))
+        {
+
+            damageable2.TakeDamage(Damage);
+            Instantiate(HitEffectPrefab, collision.contacts[0].point, Quaternion.identity).transform.LookAt(collision.contacts[0].point + collision.contacts[0].normal);
+
         }
 
     }

@@ -148,6 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbe575431d8648541994ec343fedcef2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 50
-  FollowSpeed: 30
+  Damage: 1
+  FollowSpeed: 40
   HitEffectPrefab: {fileID: 7983257068546711839, guid: 14d91532b227d864fbb8c1ac9ffb9263, type: 3}
